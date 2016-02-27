@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Single-->
@@ -61,9 +62,44 @@
                     <view key="view" contentMode="scaleToFill" id="7DC-Qo-kTp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIn-pl-eVJ">
+                                <rect key="frame" x="301" y="258" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfK-42-k4l">
+                                <rect key="frame" x="285" y="372" width="31" height="30"/>
+                                <state key="normal" title="Spin"/>
+                                <connections>
+                                    <action selector="spin:" destination="CAE-MY-4gt" eventType="touchUpInside" id="A2z-5A-bi8"/>
+                                </connections>
+                            </button>
+                            <pickerView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGF-jG-cUc">
+                                <rect key="frame" x="1" y="28" width="600" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="CAE-MY-4gt" id="MyH-sM-ecb"/>
+                                    <outlet property="delegate" destination="CAE-MY-4gt" id="U2q-nd-UYN"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aGF-jG-cUc" firstAttribute="top" secondItem="oXP-wO-Bsw" secondAttribute="bottom" constant="8" symbolic="YES" id="46T-d8-av0"/>
+                            <constraint firstItem="AIn-pl-eVJ" firstAttribute="centerX" secondItem="nfK-42-k4l" secondAttribute="centerX" id="48P-ld-5gn"/>
+                            <constraint firstItem="AIn-pl-eVJ" firstAttribute="top" secondItem="7DC-Qo-kTp" secondAttribute="top" constant="258" id="509-wk-kgK"/>
+                            <constraint firstItem="aGF-jG-cUc" firstAttribute="leading" secondItem="7DC-Qo-kTp" secondAttribute="leadingMargin" constant="-19" id="76C-SL-v2X"/>
+                            <constraint firstItem="nfK-42-k4l" firstAttribute="centerX" secondItem="7DC-Qo-kTp" secondAttribute="centerX" id="DwJ-PY-yFQ"/>
+                            <constraint firstItem="aGF-jG-cUc" firstAttribute="centerX" secondItem="AIn-pl-eVJ" secondAttribute="centerX" id="Kjx-4c-hnl"/>
+                            <constraint firstItem="Xvn-ct-rch" firstAttribute="top" secondItem="nfK-42-k4l" secondAttribute="bottom" constant="149" id="oX9-8G-2OH"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Custom" image="toolicon" id="ysz-fO-JcC"/>
+                    <connections>
+                        <outlet property="picker" destination="aGF-jG-cUc" id="E8w-HM-FiV"/>
+                        <outlet property="winLabel" destination="AIn-pl-eVJ" id="9XC-YY-Ah3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDf-Wz-iaa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

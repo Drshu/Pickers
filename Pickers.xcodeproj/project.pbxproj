@@ -18,6 +18,8 @@
 		A209091B1C7F4E7C00F91C51 /* temp1CustomPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A209091A1C7F4E7C00F91C51 /* temp1CustomPickerViewController.m */; };
 		A209091D1C7F4EC200F91C51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A209091C1C7F4EC200F91C51 /* Main.storyboard */; };
 		A209091F1C7F65D500F91C51 /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = A209091E1C7F65D500F91C51 /* statedictionary.plist */; };
+		A274F4351C81478E00134EAB /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = A274F4331C81478E00134EAB /* crunch.wav */; };
+		A274F4361C81478E00134EAB /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = A274F4341C81478E00134EAB /* win.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		A209091A1C7F4E7C00F91C51 /* temp1CustomPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = temp1CustomPickerViewController.m; sourceTree = "<group>"; };
 		A209091C1C7F4EC200F91C51 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A209091E1C7F65D500F91C51 /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = statedictionary.plist; path = "../../../../../../Users/Shu/Desktop/Beginning iOS 7 Source Code/07 - Pickers/Pickers/statedictionary.plist"; sourceTree = "<group>"; };
+		A274F4331C81478E00134EAB /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = crunch.wav; path = "../../../../../../Users/Shu/Desktop/Beginning iOS 7 Source Code/07 - Pickers/Pickers/crunch.wav"; sourceTree = "<group>"; };
+		A274F4341C81478E00134EAB /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = win.wav; path = "../../../../../../Users/Shu/Desktop/Beginning iOS 7 Source Code/07 - Pickers/Pickers/win.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 				A209091C1C7F4EC200F91C51 /* Main.storyboard */,
 				A20909161C7F4E5B00F91C51 /* temp1DependentComponentViewController.h */,
 				A20909171C7F4E5B00F91C51 /* temp1DependentComponentViewController.m */,
+				A274F4331C81478E00134EAB /* crunch.wav */,
+				A274F4341C81478E00134EAB /* win.wav */,
 			);
 			path = Pickers;
 			sourceTree = "<group>";
@@ -160,8 +166,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A274F4351C81478E00134EAB /* crunch.wav in Resources */,
 				A209091D1C7F4EC200F91C51 /* Main.storyboard in Resources */,
 				A20909031C7F4D0200F91C51 /* Assets.xcassets in Resources */,
+				A274F4361C81478E00134EAB /* win.wav in Resources */,
 				A209091F1C7F65D500F91C51 /* statedictionary.plist in Resources */,
 				A20909061C7F4D0200F91C51 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -319,6 +327,7 @@
 				A209090C1C7F4D0200F91C51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

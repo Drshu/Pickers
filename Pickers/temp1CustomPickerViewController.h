@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface temp1CustomPickerViewController : UIViewController
-
+<UIPickerViewDataSource,UIPickerViewDelegate>
 @end
